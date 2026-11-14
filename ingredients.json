@@ -1,0 +1,1952 @@
+{
+ "batch": 2,
+ "updated": "2026-11-14",
+ "ingredients": [
+  {
+   "id": "tartrazine",
+   "canonical_name": "Tartrazine",
+   "aliases": [
+    "102",
+    "E102",
+    "INS 102",
+    "Yellow 5",
+    "FD&C Yellow 5",
+    "CI 19140"
+   ],
+   "domain": "food",
+   "rating": "red",
+   "how_its_made": "A synthetic yellow azo dye made from petroleum-derived chemicals.",
+   "side_effects": "In a 2007 UK study (the Southampton study), mixes of this and other artificial colours increased hyperactive behaviour in some children. Because of that, foods sold in the EU containing it must carry a warning that it 'may have an adverse effect on activity and attention in children'. Australia does not require that warning. It is also one of the colours most linked to hives and itching in sensitive people, especially those sensitive to aspirin. The US asked food companies to phase it out by the end of 2026.",
+   "avoid_guidance": "Best avoided for children, especially if you notice behaviour changes, and by anyone with aspirin sensitivity or hives. Easy to swap for naturally coloured products.",
+   "evidence": "moderate",
+   "sources": [
+    "EFSA",
+    "UK FSA (Southampton study)",
+    "US FDA 2025"
+   ],
+   "group": "Colours"
+  },
+  {
+   "id": "quinoline-yellow",
+   "canonical_name": "Quinoline Yellow",
+   "aliases": [
+    "104",
+    "E104",
+    "INS 104",
+    "CI 47005"
+   ],
+   "domain": "food",
+   "rating": "red",
+   "how_its_made": "A synthetic yellow dye made from coal-tar or petroleum-derived chemicals.",
+   "side_effects": "In a 2007 UK study (the Southampton study), mixes of this and other artificial colours increased hyperactive behaviour in some children. Because of that, foods sold in the EU containing it must carry a warning that it 'may have an adverse effect on activity and attention in children'. Australia does not require that warning. It is not permitted in food in the US.",
+   "avoid_guidance": "Best avoided for children. Swap for products coloured with turmeric, paprika or beta-carotene.",
+   "evidence": "moderate",
+   "sources": [
+    "EFSA",
+    "UK FSA (Southampton study)"
+   ],
+   "group": "Colours"
+  },
+  {
+   "id": "sunset-yellow",
+   "canonical_name": "Sunset Yellow FCF",
+   "aliases": [
+    "110",
+    "E110",
+    "INS 110",
+    "Yellow 6",
+    "FD&C Yellow 6",
+    "CI 15985"
+   ],
+   "domain": "food",
+   "rating": "red",
+   "how_its_made": "A synthetic orange-yellow azo dye made from petroleum-derived chemicals.",
+   "side_effects": "In a 2007 UK study (the Southampton study), mixes of this and other artificial colours increased hyperactive behaviour in some children. Because of that, foods sold in the EU containing it must carry a warning that it 'may have an adverse effect on activity and attention in children'. Australia does not require that warning. The US asked food companies to phase it out by the end of 2026.",
+   "avoid_guidance": "Best avoided for children. Common in lollies, orange drinks and some sauces.",
+   "evidence": "moderate",
+   "sources": [
+    "EFSA",
+    "UK FSA (Southampton study)",
+    "US FDA 2025"
+   ],
+   "group": "Colours"
+  },
+  {
+   "id": "azorubine",
+   "canonical_name": "Azorubine (Carmoisine)",
+   "aliases": [
+    "122",
+    "E122",
+    "INS 122",
+    "Carmoisine",
+    "CI 14720"
+   ],
+   "domain": "food",
+   "rating": "red",
+   "how_its_made": "A synthetic red azo dye made from petroleum-derived chemicals.",
+   "side_effects": "In a 2007 UK study (the Southampton study), mixes of this and other artificial colours increased hyperactive behaviour in some children. Because of that, foods sold in the EU containing it must carry a warning that it 'may have an adverse effect on activity and attention in children'. Australia does not require that warning. It is not permitted in food in the US.",
+   "avoid_guidance": "Best avoided for children. Swap for products coloured with beetroot or anthocyanins.",
+   "evidence": "moderate",
+   "sources": [
+    "EFSA",
+    "UK FSA (Southampton study)"
+   ],
+   "group": "Colours"
+  },
+  {
+   "id": "ponceau-4r",
+   "canonical_name": "Ponceau 4R",
+   "aliases": [
+    "124",
+    "E124",
+    "INS 124",
+    "Brilliant Scarlet 4R",
+    "CI 16255"
+   ],
+   "domain": "food",
+   "rating": "red",
+   "how_its_made": "A synthetic red azo dye made from petroleum-derived chemicals.",
+   "side_effects": "In a 2007 UK study (the Southampton study), mixes of this and other artificial colours increased hyperactive behaviour in some children. Because of that, foods sold in the EU containing it must carry a warning that it 'may have an adverse effect on activity and attention in children'. Australia does not require that warning. It is not permitted in food in the US.",
+   "avoid_guidance": "Best avoided for children.",
+   "evidence": "moderate",
+   "sources": [
+    "EFSA",
+    "UK FSA (Southampton study)"
+   ],
+   "group": "Colours"
+  },
+  {
+   "id": "allura-red",
+   "canonical_name": "Allura Red AC",
+   "aliases": [
+    "129",
+    "E129",
+    "INS 129",
+    "Red 40",
+    "FD&C Red 40",
+    "CI 16035"
+   ],
+   "domain": "food",
+   "rating": "red",
+   "how_its_made": "A synthetic red azo dye made from petroleum-derived chemicals.",
+   "side_effects": "In a 2007 UK study (the Southampton study), mixes of this and other artificial colours increased hyperactive behaviour in some children. Because of that, foods sold in the EU containing it must carry a warning that it 'may have an adverse effect on activity and attention in children'. Australia does not require that warning. It is one of the most widely used colours worldwide. The US asked food companies to phase it out by the end of 2026, and some animal studies suggest it may affect gut inflammation, though human evidence is limited.",
+   "avoid_guidance": "Best avoided for children. Very common in red lollies, drinks and snacks.",
+   "evidence": "moderate",
+   "sources": [
+    "EFSA",
+    "UK FSA (Southampton study)",
+    "US FDA 2025"
+   ],
+   "group": "Colours"
+  },
+  {
+   "id": "brilliant-blue",
+   "canonical_name": "Brilliant Blue FCF",
+   "aliases": [
+    "133",
+    "E133",
+    "INS 133",
+    "Blue 1",
+    "FD&C Blue 1",
+    "CI 42090"
+   ],
+   "domain": "food",
+   "rating": "yellow",
+   "how_its_made": "A synthetic blue dye made from petroleum-derived chemicals.",
+   "side_effects": "It was not part of the Southampton study mix and regulators consider it safe at permitted levels. Rare allergic reactions have been reported. The US asked food companies to phase it out by the end of 2026, as part of removing all petroleum-based dyes.",
+   "avoid_guidance": "Fine occasionally. Choose naturally coloured options if you prefer to avoid synthetic dyes.",
+   "evidence": "limited",
+   "sources": [
+    "EFSA",
+    "US FDA 2025"
+   ],
+   "group": "Colours"
+  },
+  {
+   "id": "caramel-iii-iv",
+   "canonical_name": "Caramel colour III and IV",
+   "aliases": [
+    "150c",
+    "150d",
+    "E150c",
+    "E150d",
+    "INS 150c",
+    "INS 150d",
+    "ammonia caramel",
+    "sulphite ammonia caramel"
+   ],
+   "domain": "food",
+   "rating": "yellow",
+   "how_its_made": "Made by heating sugars with ammonia compounds (and sulphites for caramel IV). Used to colour colas, sauces, gravies and dark breads.",
+   "side_effects": "Making it can form small amounts of 4-MEI, which caused cancer in mice at high doses and is classed as possibly carcinogenic (Group 2B) by the WHO’s cancer agency. Regulators limit 4-MEI levels and consider normal intake safe. Plain caramel (150a) and caustic caramel (150b) don’t form it.",
+   "avoid_guidance": "Fine in small amounts. Worth limiting if you drink a lot of cola.",
+   "evidence": "limited",
+   "sources": [
+    "IARC",
+    "EFSA",
+    "FSANZ"
+   ],
+   "group": "Colours"
+  },
+  {
+   "id": "titanium-dioxide",
+   "canonical_name": "Titanium dioxide",
+   "aliases": [
+    "171",
+    "E171",
+    "INS 171",
+    "CI 77891"
+   ],
+   "domain": "food",
+   "rating": "red",
+   "how_its_made": "A white mineral pigment, mined and purified. Used to make lollies, icing, chewing gum and some sauces look brighter and whiter.",
+   "side_effects": "In 2021 the European Food Safety Authority said it could no longer be considered safe as a food additive, because concerns about damage to DNA could not be ruled out, and it has been banned in EU food since August 2022. Food Standards Australia New Zealand reviewed the evidence in 2022 and found no evidence that food-grade titanium dioxide is a concern, so it is still allowed here. The UK is still reviewing it.",
+   "avoid_guidance": "Regulators disagree, so this is a precautionary red. Easy to avoid: it adds nothing but colour.",
+   "evidence": "limited",
+   "sources": [
+    "EFSA 2021",
+    "FSANZ 2022",
+    "UK COT"
+   ],
+   "group": "Colours"
+  },
+  {
+   "id": "annatto",
+   "canonical_name": "Annatto",
+   "aliases": [
+    "160b",
+    "E160b",
+    "INS 160b",
+    "bixin",
+    "norbixin"
+   ],
+   "domain": "food",
+   "rating": "yellow",
+   "how_its_made": "A natural orange-yellow colour extracted from the seeds of the achiote tree.",
+   "side_effects": "A natural colour, generally safe. A small number of people react to it with hives or digestive upset, and it was linked to behaviour changes in some children in older elimination-diet studies.",
+   "avoid_guidance": "Fine for most people. Avoid if you notice a reaction.",
+   "evidence": "limited",
+   "sources": [
+    "EFSA",
+    "FSANZ"
+   ],
+   "group": "Colours"
+  },
+  {
+   "id": "carmine",
+   "canonical_name": "Carmine (cochineal)",
+   "aliases": [
+    "120",
+    "E120",
+    "INS 120",
+    "cochineal",
+    "carminic acid",
+    "natural red 4",
+    "CI 75470"
+   ],
+   "domain": "food",
+   "rating": "yellow",
+   "how_its_made": "A natural red colour made from crushed cochineal insects.",
+   "side_effects": "Generally safe, but a known cause of allergic reactions in a small number of people, occasionally severe. Not suitable for vegetarians or vegans.",
+   "avoid_guidance": "Avoid if you have had a reaction, or if you eat vegetarian or vegan.",
+   "evidence": "moderate",
+   "sources": [
+    "EFSA",
+    "FSANZ"
+   ],
+   "group": "Colours"
+  },
+  {
+   "id": "natural-colours",
+   "canonical_name": "Natural plant colours",
+   "aliases": [
+    "100",
+    "E100",
+    "curcumin",
+    "turmeric",
+    "160a",
+    "E160a",
+    "beta-carotene",
+    "162",
+    "E162",
+    "beetroot red",
+    "163",
+    "E163",
+    "anthocyanins",
+    "paprika extract",
+    "160c",
+    "E160c",
+    "spirulina extract",
+    "carotenes"
+   ],
+   "domain": "food",
+   "rating": "green",
+   "how_its_made": "Colours extracted from plants: turmeric (curcumin), carrots (beta-carotene), beetroot, berries and purple vegetables (anthocyanins), paprika and spirulina.",
+   "side_effects": "No meaningful concerns at the amounts used in food.",
+   "avoid_guidance": "A good sign on a label: the product was coloured without synthetic dyes.",
+   "evidence": "strong",
+   "sources": [
+    "EFSA",
+    "FSANZ"
+   ],
+   "group": "Colours"
+  },
+  {
+   "id": "sorbates",
+   "canonical_name": "Sorbic acid and sorbates",
+   "aliases": [
+    "200",
+    "202",
+    "203",
+    "E200",
+    "E202",
+    "E203",
+    "INS 200",
+    "INS 202",
+    "sorbic acid",
+    "potassium sorbate",
+    "calcium sorbate"
+   ],
+   "domain": "food",
+   "rating": "green",
+   "how_its_made": "Sorbic acid occurs naturally in some berries and is now made synthetically. Stops mould and yeast growing.",
+   "side_effects": "One of the best-tolerated preservatives. Rarely causes skin irritation in sensitive people.",
+   "avoid_guidance": "Fine for most people.",
+   "evidence": "strong",
+   "sources": [
+    "EFSA",
+    "FSANZ"
+   ],
+   "group": "Preservatives"
+  },
+  {
+   "id": "benzoates",
+   "canonical_name": "Benzoic acid and benzoates",
+   "aliases": [
+    "210",
+    "211",
+    "212",
+    "213",
+    "E210",
+    "E211",
+    "E212",
+    "E213",
+    "INS 211",
+    "benzoic acid",
+    "sodium benzoate",
+    "potassium benzoate",
+    "calcium benzoate"
+   ],
+   "domain": "food",
+   "rating": "yellow",
+   "how_its_made": "Made synthetically. Used to preserve soft drinks, cordials, sauces and pickles.",
+   "side_effects": "Sodium benzoate was part of the Southampton study mix linked to hyperactivity in some children. In drinks that also contain vitamin C, small amounts of benzene (a known carcinogen) can form, especially with heat and light; manufacturers reformulated to reduce this. It can trigger asthma or hives in sensitive people.",
+   "avoid_guidance": "Fine occasionally. Worth limiting in children’s drinks, and avoiding if you have asthma or aspirin sensitivity.",
+   "evidence": "moderate",
+   "sources": [
+    "EFSA",
+    "US FDA (benzene)",
+    "UK FSA (Southampton study)"
+   ],
+   "group": "Preservatives"
+  },
+  {
+   "id": "sulphites",
+   "canonical_name": "Sulphur dioxide and sulphites",
+   "aliases": [
+    "220",
+    "221",
+    "222",
+    "223",
+    "224",
+    "225",
+    "228",
+    "E220",
+    "E221",
+    "E223",
+    "E224",
+    "INS 220",
+    "sulphur dioxide",
+    "sulfur dioxide",
+    "sodium metabisulphite",
+    "potassium metabisulphite",
+    "sodium sulphite",
+    "sulphites",
+    "sulfites"
+   ],
+   "domain": "food",
+   "rating": "yellow",
+   "how_its_made": "Made synthetically from sulphur. Used in dried fruit, wine, sausages, cordials and some prawns.",
+   "side_effects": "Well known for triggering asthma attacks in some people with asthma, and other reactions in sensitive people. They must be declared on Australian labels when present at 10 mg/kg or more. They also destroy vitamin B1 in food.",
+   "avoid_guidance": "Avoid if you have asthma or a known sulphite sensitivity. Fine for most others in normal amounts.",
+   "evidence": "strong",
+   "sources": [
+    "FSANZ",
+    "EFSA"
+   ],
+   "group": "Preservatives"
+  },
+  {
+   "id": "nitrites-nitrates",
+   "canonical_name": "Nitrites and nitrates (in processed meat)",
+   "aliases": [
+    "249",
+    "250",
+    "251",
+    "252",
+    "E249",
+    "E250",
+    "E251",
+    "E252",
+    "INS 250",
+    "sodium nitrite",
+    "potassium nitrite",
+    "sodium nitrate",
+    "potassium nitrate"
+   ],
+   "domain": "food",
+   "rating": "red",
+   "how_its_made": "Made synthetically. Used to cure ham, bacon, salami and sausages: they stop dangerous bacteria and give cured meat its pink colour.",
+   "side_effects": "In the body and during high-heat cooking they can form nitrosamines, some of which cause cancer. The WHO’s cancer agency classes processed meat as a cause of bowel cancer (Group 1). Nitrites do an important safety job against botulism, which is why they are still permitted.",
+   "avoid_guidance": "Limit processed meats rather than avoiding one ingredient. Nitrates in vegetables are not the same concern.",
+   "evidence": "strong",
+   "sources": [
+    "IARC 2015",
+    "EFSA 2017 and 2023"
+   ],
+   "group": "Preservatives"
+  },
+  {
+   "id": "propionates",
+   "canonical_name": "Propionic acid and propionates",
+   "aliases": [
+    "280",
+    "281",
+    "282",
+    "283",
+    "E280",
+    "E282",
+    "INS 282",
+    "calcium propionate",
+    "sodium propionate",
+    "propionic acid",
+    "cultured wheat"
+   ],
+   "domain": "food",
+   "rating": "yellow",
+   "how_its_made": "Propionic acid is made synthetically or by fermentation. Calcium propionate is the main mould inhibitor in packaged bread.",
+   "side_effects": "Regulators consider it safe. A small 1990s Australian study linked it to irritability, restlessness and sleep problems in some children, and a 2019 study found it raised insulin and blood sugar hormones after a single dose. The evidence is limited.",
+   "avoid_guidance": "Fine for most people. Some families choose to avoid it if a child seems sensitive. Fresh bakery bread usually doesn’t contain it.",
+   "evidence": "limited",
+   "sources": [
+    "EFSA",
+    "FSANZ"
+   ],
+   "group": "Preservatives"
+  },
+  {
+   "id": "bha",
+   "canonical_name": "BHA (butylated hydroxyanisole)",
+   "aliases": [
+    "320",
+    "E320",
+    "INS 320",
+    "butylated hydroxyanisole"
+   ],
+   "domain": "food",
+   "rating": "red",
+   "how_its_made": "A synthetic antioxidant made from petroleum-derived chemicals. Stops fats going rancid in snacks, cereals and chewing gum.",
+   "side_effects": "The WHO’s cancer agency classes it as possibly carcinogenic to humans (Group 2B), based on animal studies. It may also affect hormones. Regulators still permit it at low levels.",
+   "avoid_guidance": "Best avoided where there’s a choice. Usually easy to swap.",
+   "evidence": "limited",
+   "sources": [
+    "IARC",
+    "EFSA"
+   ],
+   "group": "Preservatives"
+  },
+  {
+   "id": "bht",
+   "canonical_name": "BHT (butylated hydroxytoluene)",
+   "aliases": [
+    "321",
+    "E321",
+    "INS 321",
+    "butylated hydroxytoluene"
+   ],
+   "domain": "food",
+   "rating": "yellow",
+   "how_its_made": "A synthetic antioxidant made from petroleum-derived chemicals, used to stop fats going rancid.",
+   "side_effects": "Evidence is mixed: some animal studies raised concerns, others found protective effects. Regulators set a safe daily limit and consider normal intake safe.",
+   "avoid_guidance": "Fine occasionally. Choose products without it if you prefer.",
+   "evidence": "limited",
+   "sources": [
+    "EFSA",
+    "FSANZ"
+   ],
+   "group": "Preservatives"
+  },
+  {
+   "id": "tbhq",
+   "canonical_name": "TBHQ",
+   "aliases": [
+    "319",
+    "E319",
+    "INS 319",
+    "tert-butylhydroquinone",
+    "tertiary butylhydroquinone"
+   ],
+   "domain": "food",
+   "rating": "yellow",
+   "how_its_made": "A synthetic antioxidant made from petroleum-derived chemicals. Common in frying oils, crackers and fast food.",
+   "side_effects": "Considered safe at permitted levels. Some animal and lab studies suggest effects on the immune system at high doses; human evidence is lacking.",
+   "avoid_guidance": "Fine occasionally. Another reason to keep fried and fast foods as treats.",
+   "evidence": "limited",
+   "sources": [
+    "EFSA",
+    "FSANZ"
+   ],
+   "group": "Preservatives"
+  },
+  {
+   "id": "msg",
+   "canonical_name": "Monosodium glutamate (MSG)",
+   "aliases": [
+    "621",
+    "E621",
+    "INS 621",
+    "MSG",
+    "monosodium glutamate",
+    "flavour enhancer 621"
+   ],
+   "domain": "food",
+   "rating": "yellow",
+   "how_its_made": "Made by fermenting starch, sugar beet or molasses. The glutamate in it is the same as the glutamate naturally in tomatoes, cheese and mushrooms.",
+   "side_effects": "Regulators and well-designed studies have not found that it causes harm at normal amounts. A small number of people report headaches or flushing after large amounts on an empty stomach, but controlled trials haven’t confirmed this consistently. Its main downside is that it’s mostly found in heavily processed, salty foods.",
+   "avoid_guidance": "Fine for most people. Avoid if you personally notice symptoms.",
+   "evidence": "moderate",
+   "sources": [
+    "FSANZ",
+    "EFSA 2017"
+   ],
+   "group": "Flavour enhancers"
+  },
+  {
+   "id": "ribonucleotides",
+   "canonical_name": "Ribonucleotides",
+   "aliases": [
+    "627",
+    "631",
+    "635",
+    "E627",
+    "E631",
+    "E635",
+    "INS 635",
+    "disodium guanylate",
+    "disodium inosinate",
+    "disodium 5-ribonucleotides"
+   ],
+   "domain": "food",
+   "rating": "yellow",
+   "how_its_made": "Made by fermentation or from yeast or meat. Usually used with MSG in chips, instant noodles and stock.",
+   "side_effects": "Generally considered safe. There were reports in the 2000s of an itchy rash in some people after eating them; the evidence is limited. People with gout are often advised to limit them, as they break down into purines.",
+   "avoid_guidance": "Fine for most people. Avoid if you have gout or notice a rash.",
+   "evidence": "limited",
+   "sources": [
+    "FSANZ",
+    "EFSA"
+   ],
+   "group": "Flavour enhancers"
+  },
+  {
+   "id": "hvp",
+   "canonical_name": "Hydrolysed vegetable protein",
+   "aliases": [
+    "hydrolysed vegetable protein",
+    "hydrolyzed vegetable protein",
+    "hvp",
+    "hydrolysed soy protein",
+    "hydrolysed plant protein"
+   ],
+   "domain": "food",
+   "rating": "yellow",
+   "how_its_made": "Made by breaking down soy, corn or wheat protein with acid. Creates natural glutamates, so it works like MSG.",
+   "side_effects": "Generally safe. Acid-hydrolysed versions can contain traces of 3-MCPD, which regulators limit because it affected kidneys in animal studies. It often signals a heavily processed product.",
+   "avoid_guidance": "Fine occasionally.",
+   "evidence": "limited",
+   "sources": [
+    "FSANZ",
+    "EFSA"
+   ],
+   "group": "Flavour enhancers"
+  },
+  {
+   "id": "yeast-extract",
+   "canonical_name": "Yeast extract",
+   "aliases": [
+    "yeast extract",
+    "autolysed yeast",
+    "autolyzed yeast"
+   ],
+   "domain": "food",
+   "rating": "green",
+   "how_its_made": "Made by breaking down yeast (the basis of Vegemite). Rich in natural glutamates, B vitamins and savoury flavour.",
+   "side_effects": "No meaningful concerns at normal amounts. Can be high in salt.",
+   "avoid_guidance": "Fine. Some people avoid it because it adds glutamate, like MSG.",
+   "evidence": "strong",
+   "sources": [
+    "FSANZ"
+   ],
+   "group": "Flavour enhancers"
+  },
+  {
+   "id": "aspartame",
+   "canonical_name": "Aspartame",
+   "aliases": [
+    "951",
+    "E951",
+    "INS 951",
+    "aspartame",
+    "NutraSweet",
+    "Equal"
+   ],
+   "domain": "food",
+   "rating": "yellow",
+   "how_its_made": "Made from two amino acids (aspartic acid and phenylalanine). About 200 times sweeter than sugar.",
+   "side_effects": "In 2023 the WHO’s cancer agency classed it as possibly carcinogenic (Group 2B, based on limited evidence), while the WHO’s food additives committee kept its acceptable daily intake of 40 mg per kg of body weight, which is far more than most people consume. It must be avoided by people with phenylketonuria (PKU).",
+   "avoid_guidance": "Fine in moderation for most people. People with PKU must avoid it. Water is the best swap for diet drinks.",
+   "evidence": "limited",
+   "sources": [
+    "IARC 2023",
+    "JECFA 2023",
+    "FSANZ"
+   ],
+   "group": "Sweeteners"
+  },
+  {
+   "id": "acesulfame-k",
+   "canonical_name": "Acesulfame potassium",
+   "aliases": [
+    "950",
+    "E950",
+    "INS 950",
+    "acesulfame K",
+    "acesulfame potassium",
+    "Ace-K"
+   ],
+   "domain": "food",
+   "rating": "yellow",
+   "how_its_made": "Made synthetically. About 200 times sweeter than sugar; often paired with aspartame or sucralose.",
+   "side_effects": "Regulators consider it safe. Some animal studies suggest it may affect gut bacteria; human evidence is limited.",
+   "avoid_guidance": "Fine in moderation.",
+   "evidence": "limited",
+   "sources": [
+    "EFSA",
+    "FSANZ"
+   ],
+   "group": "Sweeteners"
+  },
+  {
+   "id": "sucralose",
+   "canonical_name": "Sucralose",
+   "aliases": [
+    "955",
+    "E955",
+    "INS 955",
+    "sucralose",
+    "Splenda"
+   ],
+   "domain": "food",
+   "rating": "yellow",
+   "how_its_made": "Made by chemically replacing parts of sugar molecules with chlorine. About 600 times sweeter than sugar.",
+   "side_effects": "Regulators consider it safe at permitted levels. Recent lab studies raised questions about gut bacteria and about a compound that forms during manufacture (sucralose-6-acetate); these need confirming in people. Heating it to very high temperatures may form unwanted compounds.",
+   "avoid_guidance": "Fine in moderation. Better not used for high-heat baking.",
+   "evidence": "limited",
+   "sources": [
+    "EFSA",
+    "FSANZ"
+   ],
+   "group": "Sweeteners"
+  },
+  {
+   "id": "saccharin",
+   "canonical_name": "Saccharin",
+   "aliases": [
+    "954",
+    "E954",
+    "INS 954",
+    "saccharin",
+    "Sweet’N Low"
+   ],
+   "domain": "food",
+   "rating": "yellow",
+   "how_its_made": "One of the oldest artificial sweeteners, made synthetically.",
+   "side_effects": "A 1970s bladder cancer scare came from rat studies that turned out not to apply to people, and it was removed from cancer lists. Considered safe today. Can taste bitter.",
+   "avoid_guidance": "Fine in moderation.",
+   "evidence": "moderate",
+   "sources": [
+    "IARC",
+    "EFSA",
+    "FSANZ"
+   ],
+   "group": "Sweeteners"
+  },
+  {
+   "id": "stevia",
+   "canonical_name": "Steviol glycosides (stevia)",
+   "aliases": [
+    "960",
+    "E960",
+    "960a",
+    "INS 960",
+    "stevia",
+    "steviol glycosides",
+    "rebaudioside A",
+    "stevia leaf extract"
+   ],
+   "domain": "food",
+   "rating": "green",
+   "how_its_made": "Extracted and purified from the leaves of the stevia plant.",
+   "side_effects": "Considered safe at permitted levels. Highly purified forms are what’s approved; whole-leaf stevia isn’t sold as a food additive.",
+   "avoid_guidance": "A good alternative to artificial sweeteners. Still trains a sweet tooth.",
+   "evidence": "moderate",
+   "sources": [
+    "EFSA",
+    "FSANZ",
+    "JECFA"
+   ],
+   "group": "Sweeteners"
+  },
+  {
+   "id": "erythritol",
+   "canonical_name": "Erythritol",
+   "aliases": [
+    "968",
+    "E968",
+    "INS 968",
+    "erythritol"
+   ],
+   "domain": "food",
+   "rating": "yellow",
+   "how_its_made": "A sugar alcohol made by fermenting glucose. Found in many \"no added sugar\", keto and low-carb products.",
+   "side_effects": "Regulators consider it safe. A 2023 study linked higher blood levels of erythritol to a higher risk of heart attack and stroke, and found it made blood platelets clot more easily. The study can’t show cause and effect, but it’s worth watching. Large amounts can upset the stomach.",
+   "avoid_guidance": "Fine occasionally. People with heart disease or clotting risk may want to limit it until more is known.",
+   "evidence": "limited",
+   "sources": [
+    "EFSA",
+    "Witkowski et al., Nature Medicine 2023"
+   ],
+   "group": "Sweeteners"
+  },
+  {
+   "id": "polyols",
+   "canonical_name": "Sugar alcohols (polyols)",
+   "aliases": [
+    "420",
+    "421",
+    "953",
+    "965",
+    "966",
+    "967",
+    "E420",
+    "E421",
+    "E965",
+    "E967",
+    "sorbitol",
+    "mannitol",
+    "isomalt",
+    "maltitol",
+    "lactitol",
+    "xylitol"
+   ],
+   "domain": "food",
+   "rating": "yellow",
+   "how_its_made": "Made from sugars or starches. Used in sugar-free lollies, chewing gum and diabetic chocolate.",
+   "side_effects": "Safe, but they ferment in the gut: larger amounts cause bloating, gas and diarrhoea (labels must warn that excess may have a laxative effect). They can trigger symptoms in people with IBS (they are high-FODMAP). Xylitol is extremely toxic to dogs.",
+   "avoid_guidance": "Fine in small amounts. Limit if you have IBS. Keep xylitol products away from your dog.",
+   "evidence": "strong",
+   "sources": [
+    "FSANZ",
+    "EFSA"
+   ],
+   "group": "Sweeteners"
+  },
+  {
+   "id": "carrageenan",
+   "canonical_name": "Carrageenan",
+   "aliases": [
+    "407",
+    "407a",
+    "E407",
+    "E407a",
+    "INS 407",
+    "carrageenan",
+    "processed eucheuma seaweed"
+   ],
+   "domain": "food",
+   "rating": "yellow",
+   "how_its_made": "Extracted from red seaweed. Used to thicken dairy desserts, plant milks, cream and processed meats.",
+   "side_effects": "Regulators consider food-grade carrageenan safe, though EFSA asked for more data in 2018. Animal and lab studies suggest it may inflame the gut, and a large French study (NutriNet-Santé) linked higher intake to type 2 diabetes. These are associations, not proof.",
+   "avoid_guidance": "Fine occasionally. People with inflammatory bowel disease are often advised to avoid it.",
+   "evidence": "limited",
+   "sources": [
+    "EFSA 2018",
+    "NutriNet-Santé (Lancet Diabetes & Endocrinology 2024)"
+   ],
+   "group": "Emulsifiers and thickeners"
+  },
+  {
+   "id": "celluloses",
+   "canonical_name": "Celluloses (incl. CMC)",
+   "aliases": [
+    "460",
+    "461",
+    "463",
+    "464",
+    "466",
+    "468",
+    "E460",
+    "E461",
+    "E464",
+    "E466",
+    "E468",
+    "INS 466",
+    "carboxymethylcellulose",
+    "cellulose gum",
+    "sodium carboxymethylcellulose",
+    "CMC",
+    "methylcellulose",
+    "hydroxypropyl methylcellulose",
+    "microcrystalline cellulose"
+   ],
+   "domain": "food",
+   "rating": "yellow",
+   "how_its_made": "Made by chemically modifying plant cellulose (wood pulp or cotton). Used to thicken and stabilise sauces, ice cream and gluten-free bread.",
+   "side_effects": "Regulators consider them safe. A 2015 mouse study and a 2022 human trial found CMC can change gut bacteria and thin the protective gut lining, and the French NutriNet-Santé study linked higher intake of celluloses to heart disease. Early, but consistent enough to note.",
+   "avoid_guidance": "Fine occasionally. Worth limiting if you have gut issues.",
+   "evidence": "limited",
+   "sources": [
+    "EFSA",
+    "Chassaing et al. 2015 and 2022",
+    "NutriNet-Santé (BMJ 2023)"
+   ],
+   "group": "Emulsifiers and thickeners"
+  },
+  {
+   "id": "polysorbate-80",
+   "canonical_name": "Polysorbate 80",
+   "aliases": [
+    "433",
+    "E433",
+    "INS 433",
+    "polysorbate 80",
+    "polyoxyethylene sorbitan monooleate"
+   ],
+   "domain": "food",
+   "rating": "yellow",
+   "how_its_made": "Made synthetically from sorbitol and oleic acid. Used in ice cream, dressings and some sauces.",
+   "side_effects": "Regulators consider it safe. In mouse studies it changed gut bacteria and promoted low-grade inflammation; human evidence is still limited.",
+   "avoid_guidance": "Fine occasionally. Worth limiting if you have gut issues.",
+   "evidence": "limited",
+   "sources": [
+    "EFSA",
+    "Chassaing et al. 2015"
+   ],
+   "group": "Emulsifiers and thickeners"
+  },
+  {
+   "id": "mono-diglycerides",
+   "canonical_name": "Mono- and diglycerides of fatty acids",
+   "aliases": [
+    "471",
+    "472",
+    "472a",
+    "472b",
+    "472c",
+    "472e",
+    "E471",
+    "E472",
+    "E472b",
+    "E472c",
+    "E472e",
+    "INS 471",
+    "mono and diglycerides",
+    "mono- and diglycerides of fatty acids",
+    "DATEM",
+    "datem"
+   ],
+   "domain": "food",
+   "rating": "yellow",
+   "how_its_made": "Made from vegetable oils or animal fats. Among the most common emulsifiers: in bread, cakes, margarine and ice cream.",
+   "side_effects": "Regulators consider them safe. In the large French NutriNet-Santé study, higher intakes were associated with higher risks of heart disease, some cancers and type 2 diabetes. These are observational links, not proof, but they were among the most consistent findings in that research.",
+   "avoid_guidance": "Fine occasionally. A sign of a more processed product, so worth limiting.",
+   "evidence": "limited",
+   "sources": [
+    "EFSA",
+    "NutriNet-Santé (BMJ 2023, Lancet Diabetes & Endocrinology 2024)"
+   ],
+   "group": "Emulsifiers and thickeners"
+  },
+  {
+   "id": "lecithin",
+   "canonical_name": "Lecithin",
+   "aliases": [
+    "322",
+    "E322",
+    "INS 322",
+    "lecithin",
+    "soy lecithin",
+    "sunflower lecithin",
+    "lecithins"
+   ],
+   "domain": "food",
+   "rating": "green",
+   "how_its_made": "Extracted from soybeans, sunflower seeds or eggs. Used in chocolate, spreads and baked goods.",
+   "side_effects": "No meaningful concerns at normal amounts. Soy lecithin rarely affects people with soy allergy, but it must still be declared.",
+   "avoid_guidance": "Fine. Sunflower lecithin is an option if you avoid soy.",
+   "evidence": "strong",
+   "sources": [
+    "EFSA",
+    "FSANZ"
+   ],
+   "group": "Emulsifiers and thickeners"
+  },
+  {
+   "id": "plant-gums",
+   "canonical_name": "Plant gums",
+   "aliases": [
+    "410",
+    "412",
+    "414",
+    "415",
+    "418",
+    "E410",
+    "E412",
+    "E414",
+    "E415",
+    "E418",
+    "INS 415",
+    "guar gum",
+    "xanthan gum",
+    "locust bean gum",
+    "gum arabic",
+    "acacia gum",
+    "gellan gum"
+   ],
+   "domain": "food",
+   "rating": "green",
+   "how_its_made": "Guar gum and locust bean gum come from seeds; gum arabic from acacia trees; xanthan and gellan gum are made by fermentation.",
+   "side_effects": "Generally safe, and they act like soluble fibre. Large amounts can cause bloating.",
+   "avoid_guidance": "Fine for most people.",
+   "evidence": "strong",
+   "sources": [
+    "EFSA",
+    "FSANZ"
+   ],
+   "group": "Emulsifiers and thickeners"
+  },
+  {
+   "id": "modified-starch",
+   "canonical_name": "Modified starches",
+   "aliases": [
+    "1400",
+    "1401",
+    "1403",
+    "1404",
+    "1410",
+    "1412",
+    "1413",
+    "1414",
+    "1420",
+    "1422",
+    "1440",
+    "1442",
+    "1450",
+    "INS 1422",
+    "E1422",
+    "modified starch",
+    "modified maize starch",
+    "modified tapioca starch",
+    "thickener 1422"
+   ],
+   "domain": "food",
+   "rating": "green",
+   "how_its_made": "Starch from corn, tapioca, potato or wheat, treated with heat, acids or enzymes so it thickens better.",
+   "side_effects": "No meaningful safety concerns. Some types are refined carbohydrates. Must declare wheat if it comes from wheat.",
+   "avoid_guidance": "Fine for most people.",
+   "evidence": "strong",
+   "sources": [
+    "EFSA",
+    "FSANZ"
+   ],
+   "group": "Emulsifiers and thickeners"
+  },
+  {
+   "id": "phosphates",
+   "canonical_name": "Phosphate additives",
+   "aliases": [
+    "338",
+    "339",
+    "340",
+    "341",
+    "450",
+    "451",
+    "452",
+    "E338",
+    "E339",
+    "E340",
+    "E341",
+    "E450",
+    "E451",
+    "E452",
+    "INS 450",
+    "INS 451",
+    "INS 452",
+    "phosphoric acid",
+    "sodium phosphate",
+    "disodium phosphate",
+    "trisodium phosphate",
+    "tripotassium phosphate",
+    "diphosphates",
+    "triphosphates",
+    "polyphosphates",
+    "sodium tripolyphosphate"
+   ],
+   "domain": "food",
+   "rating": "yellow",
+   "how_its_made": "Made from phosphate rock. Used as raising agents, in processed cheese, processed meats and colas (phosphoric acid).",
+   "side_effects": "Phosphorus from additives is absorbed far more completely than from whole foods. High intakes are a concern for people with kidney disease and may affect heart and bone health. In 2019 EFSA lowered the safe daily intake and noted some children may exceed it. The French NutriNet-Santé study also linked some phosphates to heart disease and diabetes.",
+   "avoid_guidance": "Fine occasionally. People with kidney disease should limit them. Cola is a big source.",
+   "evidence": "moderate",
+   "sources": [
+    "EFSA 2019",
+    "NutriNet-Santé"
+   ],
+   "group": "Emulsifiers and thickeners"
+  },
+  {
+   "id": "hydrogenated-oil",
+   "canonical_name": "Partially hydrogenated oils (trans fats)",
+   "aliases": [
+    "partially hydrogenated vegetable oil",
+    "partially hydrogenated oil",
+    "hydrogenated vegetable oil",
+    "hydrogenated oil",
+    "hydrogenated fat",
+    "partially hydrogenated soybean oil",
+    "trans fat",
+    "vegetable shortening"
+   ],
+   "domain": "food",
+   "rating": "red",
+   "how_its_made": "Liquid oil is treated with hydrogen to make it solid, which creates artificial trans fats.",
+   "side_effects": "Artificial trans fats raise LDL (\"bad\") cholesterol, lower HDL and increase heart disease risk; the WHO has called for them to be eliminated worldwide. Australian levels are now low, but they can still turn up in some imported and baked products. (Fully hydrogenated oils contain little trans fat but are still highly processed.)",
+   "avoid_guidance": "Avoid partially hydrogenated oils.",
+   "evidence": "strong",
+   "sources": [
+    "WHO",
+    "FSANZ"
+   ],
+   "group": "Fats and sugars"
+  },
+  {
+   "id": "palm-oil",
+   "canonical_name": "Palm oil",
+   "aliases": [
+    "palm oil",
+    "palm kernel oil",
+    "palm fat",
+    "palmolein",
+    "palm olein",
+    "vegetable oil (palm)",
+    "=palm",
+    "fractionated palm kernel oil"
+   ],
+   "domain": "food",
+   "rating": "yellow",
+   "how_its_made": "Pressed from the fruit or kernels of oil palms, mostly grown in Indonesia and Malaysia.",
+   "side_effects": "High in saturated fat, especially palm kernel oil. Large-scale palm farming has driven rainforest loss and habitat destruction for orangutans; certified sustainable (RSPO) palm oil is better. Like other refined oils, high-heat refining can create contaminants (glycidyl esters) that regulators limit.",
+   "avoid_guidance": "Fine occasionally. Choose RSPO-certified products where possible.",
+   "evidence": "strong",
+   "sources": [
+    "WHO",
+    "EFSA (contaminants)"
+   ],
+   "group": "Fats and sugars"
+  },
+  {
+   "id": "seed-oils",
+   "canonical_name": "Seed oils (canola, sunflower, soybean)",
+   "aliases": [
+    "canola oil",
+    "rapeseed oil",
+    "sunflower oil",
+    "soybean oil",
+    "soy oil",
+    "vegetable oil",
+    "cottonseed oil",
+    "corn oil",
+    "rice bran oil",
+    "grapeseed oil",
+    "safflower oil"
+   ],
+   "domain": "food",
+   "rating": "green",
+   "how_its_made": "Pressed from seeds, then usually refined, bleached and deodorised.",
+   "side_effects": "Online claims that seed oils are toxic or inflammatory aren’t supported by current evidence: major reviews find replacing saturated fat with these oils lowers heart disease risk. Reusing them for deep-frying creates harmful compounds, and they’re often a marker of ultra-processed foods, which is the real concern.",
+   "avoid_guidance": "Fine. Extra virgin olive oil is an even better everyday choice.",
+   "evidence": "moderate",
+   "sources": [
+    "Heart Foundation",
+    "WHO",
+    "AHA"
+   ],
+   "group": "Fats and sugars"
+  },
+  {
+   "id": "glucose-fructose",
+   "canonical_name": "Glucose-fructose syrup / high fructose corn syrup",
+   "aliases": [
+    "high fructose corn syrup",
+    "HFCS",
+    "glucose-fructose syrup",
+    "fructose-glucose syrup",
+    "fructose syrup",
+    "corn syrup",
+    "isoglucose",
+    "invert sugar syrup"
+   ],
+   "domain": "food",
+   "rating": "yellow",
+   "how_its_made": "Made by breaking down corn or wheat starch into sugars, then converting some glucose into fructose.",
+   "side_effects": "It’s added sugar. Diets high in added sugars are linked to weight gain, type 2 diabetes, fatty liver and tooth decay. It’s more common in imported products than in Australian-made ones.",
+   "avoid_guidance": "Limit, like other added sugars. The WHO suggests keeping added sugars below 10% of daily energy.",
+   "evidence": "strong",
+   "sources": [
+    "WHO"
+   ],
+   "group": "Fats and sugars"
+  },
+  {
+   "id": "maltodextrin",
+   "canonical_name": "Maltodextrin",
+   "aliases": [
+    "maltodextrin",
+    "maltodextrine",
+    "corn maltodextrin",
+    "tapioca maltodextrin"
+   ],
+   "domain": "food",
+   "rating": "yellow",
+   "how_its_made": "Made by partly breaking down starch from corn, tapioca, potato or wheat.",
+   "side_effects": "Safe, but it’s a quickly digested carbohydrate that raises blood sugar fast, often faster than table sugar. Some early studies suggest it may affect gut bacteria. Used as a cheap filler and thickener.",
+   "avoid_guidance": "Fine in small amounts. People managing blood sugar may want to watch for it.",
+   "evidence": "limited",
+   "sources": [
+    "FSANZ"
+   ],
+   "group": "Fats and sugars"
+  },
+  {
+   "id": "acids",
+   "canonical_name": "Citric and ascorbic acid",
+   "aliases": [
+    "330",
+    "300",
+    "301",
+    "331",
+    "E330",
+    "E300",
+    "E301",
+    "E331",
+    "INS 330",
+    "citric acid",
+    "ascorbic acid",
+    "sodium ascorbate",
+    "sodium citrate",
+    "=vitamin C"
+   ],
+   "domain": "food",
+   "rating": "green",
+   "how_its_made": "Citric acid is made by fermenting sugar; ascorbic acid is vitamin C, made by fermentation and synthesis.",
+   "side_effects": "No meaningful concerns at normal amounts. Acidic drinks can wear tooth enamel over time.",
+   "avoid_guidance": "Fine.",
+   "evidence": "strong",
+   "sources": [
+    "EFSA",
+    "FSANZ"
+   ],
+   "group": "Acids and others"
+  },
+  {
+   "id": "silicon-dioxide",
+   "canonical_name": "Silicon dioxide",
+   "aliases": [
+    "551",
+    "E551",
+    "INS 551",
+    "silicon dioxide",
+    "=silica"
+   ],
+   "domain": "food",
+   "rating": "green",
+   "how_its_made": "A mineral (silica), made synthetically. Stops powders like salt, spices and powdered drinks from clumping.",
+   "side_effects": "Considered safe. EFSA noted gaps in the data on very small particles in 2018 and has asked for more information; no harm has been shown.",
+   "avoid_guidance": "Fine.",
+   "evidence": "moderate",
+   "sources": [
+    "EFSA 2018",
+    "FSANZ"
+   ],
+   "group": "Acids and others"
+  },
+  {
+   "id": "ssl",
+   "canonical_name": "Sodium stearoyl lactylate",
+   "aliases": [
+    "481",
+    "482",
+    "E481",
+    "E482",
+    "INS 481",
+    "sodium stearoyl lactylate",
+    "calcium stearoyl lactylate",
+    "sodium stearoyl-2-lactylate"
+   ],
+   "domain": "food",
+   "rating": "yellow",
+   "how_its_made": "Made from stearic acid (from vegetable oil or animal fat) and lactic acid. A dough conditioner in packaged bread and cakes.",
+   "side_effects": "Regulators consider it safe. It hasn’t been studied as much as other emulsifiers; a few lab studies suggest emulsifiers in this family may affect the gut lining. It mainly signals a more processed bread.",
+   "avoid_guidance": "Fine occasionally. Bakery or sourdough bread usually doesn’t contain it.",
+   "evidence": "limited",
+   "sources": [
+    "EFSA",
+    "FSANZ"
+   ],
+   "group": "Emulsifiers and thickeners"
+  },
+  {
+   "id": "polysorbates-other",
+   "canonical_name": "Other polysorbates and sorbitan esters",
+   "aliases": [
+    "432",
+    "434",
+    "435",
+    "436",
+    "491",
+    "492",
+    "E432",
+    "E435",
+    "E436",
+    "E491",
+    "E492",
+    "polysorbate 20",
+    "polysorbate 60",
+    "polysorbate 65",
+    "sorbitan monostearate",
+    "sorbitan tristearate"
+   ],
+   "domain": "food",
+   "rating": "yellow",
+   "how_its_made": "Made synthetically from sorbitol and fatty acids. Used in cake mixes, icing, ice cream and whipped toppings.",
+   "side_effects": "Regulators consider them safe at permitted levels. Their close relative polysorbate 80 has changed gut bacteria in mouse studies; human evidence is limited.",
+   "avoid_guidance": "Fine occasionally.",
+   "evidence": "limited",
+   "sources": [
+    "EFSA"
+   ],
+   "group": "Emulsifiers and thickeners"
+  },
+  {
+   "id": "pgpr",
+   "canonical_name": "Polyglycerol polyricinoleate (PGPR)",
+   "aliases": [
+    "476",
+    "E476",
+    "INS 476",
+    "PGPR",
+    "polyglycerol polyricinoleate"
+   ],
+   "domain": "food",
+   "rating": "yellow",
+   "how_its_made": "Made from castor oil and glycerol. Used in cheaper chocolate to replace some cocoa butter.",
+   "side_effects": "Considered safe at permitted levels. Mostly a sign the chocolate uses less cocoa butter.",
+   "avoid_guidance": "Fine occasionally. Better-quality chocolate usually leaves it out.",
+   "evidence": "limited",
+   "sources": [
+    "EFSA"
+   ],
+   "group": "Emulsifiers and thickeners"
+  },
+  {
+   "id": "pectin-agar-gelatine",
+   "canonical_name": "Pectin, agar, alginates and gelatine",
+   "aliases": [
+    "440",
+    "406",
+    "400",
+    "401",
+    "E440",
+    "E406",
+    "E401",
+    "INS 440",
+    "=pectin",
+    "=agar",
+    "agar agar",
+    "alginate",
+    "sodium alginate",
+    "=gelatine",
+    "=gelatin"
+   ],
+   "domain": "food",
+   "rating": "green",
+   "how_its_made": "Pectin comes from apple and citrus peel, agar and alginates from seaweed, and gelatine from animal collagen.",
+   "side_effects": "No meaningful concerns at normal amounts. Gelatine is animal-derived, so not suitable for vegetarians.",
+   "avoid_guidance": "Fine.",
+   "evidence": "strong",
+   "sources": [
+    "EFSA",
+    "FSANZ"
+   ],
+   "group": "Emulsifiers and thickeners"
+  },
+  {
+   "id": "sodium-erythorbate",
+   "canonical_name": "Sodium erythorbate (antioxidant)",
+   "aliases": [
+    "316",
+    "315",
+    "E316",
+    "E315",
+    "INS 316",
+    "sodium erythorbate",
+    "erythorbic acid",
+    "isoascorbic acid"
+   ],
+   "domain": "food",
+   "rating": "green",
+   "how_its_made": "A close relative of vitamin C, made by fermentation. Used in cured meats to help the curing process and reduce nitrosamines.",
+   "side_effects": "No meaningful concerns; it actually helps reduce harmful nitrosamines forming in cured meat. (The meat it’s in is still processed meat.)",
+   "avoid_guidance": "Fine itself.",
+   "evidence": "strong",
+   "sources": [
+    "EFSA",
+    "FSANZ"
+   ],
+   "group": "Acids and others"
+  },
+  {
+   "id": "tocopherols",
+   "canonical_name": "Tocopherols (vitamin E)",
+   "aliases": [
+    "306",
+    "307",
+    "308",
+    "309",
+    "E306",
+    "E307",
+    "INS 307",
+    "tocopherols",
+    "mixed tocopherols",
+    "=vitamin E",
+    "alpha-tocopherol"
+   ],
+   "domain": "food",
+   "rating": "green",
+   "how_its_made": "Vitamin E, extracted from vegetable oils or made synthetically. A natural antioxidant that stops oils going rancid.",
+   "side_effects": "No meaningful concerns at the amounts used in food.",
+   "avoid_guidance": "Fine: a good alternative to BHA and BHT.",
+   "evidence": "strong",
+   "sources": [
+    "EFSA",
+    "FSANZ"
+   ],
+   "group": "Preservatives"
+  },
+  {
+   "id": "rosemary-extract",
+   "canonical_name": "Rosemary extract",
+   "aliases": [
+    "392",
+    "E392",
+    "INS 392",
+    "rosemary extract",
+    "extracts of rosemary"
+   ],
+   "domain": "food",
+   "rating": "green",
+   "how_its_made": "Extracted from rosemary leaves. A natural antioxidant.",
+   "side_effects": "No meaningful concerns at the amounts used.",
+   "avoid_guidance": "Fine: a natural alternative to synthetic antioxidants.",
+   "evidence": "moderate",
+   "sources": [
+    "EFSA"
+   ],
+   "group": "Preservatives"
+  },
+  {
+   "id": "natamycin",
+   "canonical_name": "Natamycin",
+   "aliases": [
+    "235",
+    "E235",
+    "INS 235",
+    "natamycin",
+    "pimaricin"
+   ],
+   "domain": "food",
+   "rating": "yellow",
+   "how_its_made": "An antifungal made by fermentation with soil bacteria. Used on the surface of cheese and sausages.",
+   "side_effects": "Considered safe at permitted levels and barely absorbed. Some experts are cautious because it is also used as a medicine, and overuse could encourage resistant fungi.",
+   "avoid_guidance": "Fine occasionally.",
+   "evidence": "limited",
+   "sources": [
+    "EFSA"
+   ],
+   "group": "Preservatives"
+  },
+  {
+   "id": "nisin",
+   "canonical_name": "Nisin",
+   "aliases": [
+    "234",
+    "E234",
+    "INS 234",
+    "nisin"
+   ],
+   "domain": "food",
+   "rating": "green",
+   "how_its_made": "A natural antibacterial made by fermentation with lactic acid bacteria. Used in cheese, cream and canned foods.",
+   "side_effects": "No meaningful concerns at permitted levels.",
+   "avoid_guidance": "Fine.",
+   "evidence": "moderate",
+   "sources": [
+    "EFSA",
+    "FSANZ"
+   ],
+   "group": "Preservatives"
+  },
+  {
+   "id": "edta",
+   "canonical_name": "EDTA",
+   "aliases": [
+    "385",
+    "E385",
+    "INS 385",
+    "calcium disodium EDTA",
+    "disodium EDTA",
+    "EDTA"
+   ],
+   "domain": "food",
+   "rating": "yellow",
+   "how_its_made": "Made synthetically. Binds metals to stop colour and flavour changes in dressings, mayonnaise and canned foods.",
+   "side_effects": "Considered safe at permitted levels and poorly absorbed. At high doses in animal studies it affected mineral absorption.",
+   "avoid_guidance": "Fine occasionally.",
+   "evidence": "limited",
+   "sources": [
+    "EFSA",
+    "JECFA"
+   ],
+   "group": "Preservatives"
+  },
+  {
+   "id": "acetic-lactic",
+   "canonical_name": "Acetic, lactic and malic acids",
+   "aliases": [
+    "260",
+    "270",
+    "296",
+    "325",
+    "326",
+    "327",
+    "E260",
+    "E270",
+    "E296",
+    "INS 260",
+    "acetic acid",
+    "=vinegar",
+    "lactic acid",
+    "malic acid",
+    "sodium lactate",
+    "calcium lactate",
+    "potassium lactate",
+    "sodium acetate",
+    "sodium diacetate",
+    "262"
+   ],
+   "domain": "food",
+   "rating": "green",
+   "how_its_made": "Acetic acid is vinegar; lactic and malic acids are made by fermentation and occur naturally in fruit and yoghurt.",
+   "side_effects": "No meaningful concerns at normal amounts.",
+   "avoid_guidance": "Fine.",
+   "evidence": "strong",
+   "sources": [
+    "EFSA",
+    "FSANZ"
+   ],
+   "group": "Acids and others"
+  },
+  {
+   "id": "raising-agents",
+   "canonical_name": "Raising agents (baking soda and friends)",
+   "aliases": [
+    "500",
+    "501",
+    "503",
+    "575",
+    "E500",
+    "E501",
+    "E503",
+    "E575",
+    "INS 500",
+    "sodium bicarbonate",
+    "sodium carbonate",
+    "bicarbonate of soda",
+    "baking soda",
+    "ammonium bicarbonate",
+    "glucono delta-lactone"
+   ],
+   "domain": "food",
+   "rating": "green",
+   "how_its_made": "Baking soda and similar mineral salts that release gas to make baked goods rise.",
+   "side_effects": "No meaningful concerns. They add sodium, like salt.",
+   "avoid_guidance": "Fine.",
+   "evidence": "strong",
+   "sources": [
+    "FSANZ"
+   ],
+   "group": "Acids and others"
+  },
+  {
+   "id": "sodium-aluminium-phosphate",
+   "canonical_name": "Aluminium-containing additives",
+   "aliases": [
+    "541",
+    "554",
+    "556",
+    "559",
+    "173",
+    "E541",
+    "E554",
+    "E556",
+    "E559",
+    "E173",
+    "INS 541",
+    "sodium aluminium phosphate",
+    "sodium aluminosilicate",
+    "calcium aluminium silicate",
+    "=aluminium"
+   ],
+   "domain": "food",
+   "rating": "yellow",
+   "how_its_made": "Mineral salts containing aluminium. Used as raising agents in some cake mixes and as anti-caking agents.",
+   "side_effects": "EFSA has said some people, particularly children, may exceed the safe weekly intake of aluminium from all food sources combined. Aluminium is a nervous system toxicant at high exposures.",
+   "avoid_guidance": "Fine occasionally. Worth limiting in foods children eat often.",
+   "evidence": "moderate",
+   "sources": [
+    "EFSA 2008 and 2011"
+   ],
+   "group": "Acids and others"
+  },
+  {
+   "id": "potassium-chloride",
+   "canonical_name": "Mineral salts (potassium chloride, magnesium, calcium)",
+   "aliases": [
+    "508",
+    "509",
+    "511",
+    "170",
+    "E508",
+    "E509",
+    "E170",
+    "potassium chloride",
+    "calcium chloride",
+    "magnesium chloride",
+    "calcium carbonate"
+   ],
+   "domain": "food",
+   "rating": "green",
+   "how_its_made": "Minerals used to firm foods, replace some salt or add calcium.",
+   "side_effects": "No meaningful concerns. People with kidney disease or on some blood pressure medicines should watch potassium-based salt substitutes.",
+   "avoid_guidance": "Fine for most people.",
+   "evidence": "strong",
+   "sources": [
+    "FSANZ"
+   ],
+   "group": "Acids and others"
+  },
+  {
+   "id": "glycerol",
+   "canonical_name": "Glycerol (glycerine)",
+   "aliases": [
+    "422",
+    "E422",
+    "INS 422",
+    "=glycerol",
+    "=glycerine",
+    "=glycerin"
+   ],
+   "domain": "food",
+   "rating": "green",
+   "how_its_made": "Made from vegetable oils or as a by-product of biodiesel. Keeps foods moist.",
+   "side_effects": "No meaningful concerns at the amounts used in foods. In large amounts, such as in some slushies, it can make young children unwell, so UK authorities advise against slushies containing it for under-fives.",
+   "avoid_guidance": "Fine. Avoid glycerol-heavy slushies for young children.",
+   "evidence": "moderate",
+   "sources": [
+    "EFSA",
+    "UK FSA 2023"
+   ],
+   "group": "Acids and others"
+  },
+  {
+   "id": "carnauba-shellac",
+   "canonical_name": "Glazing agents (carnauba wax, shellac, beeswax)",
+   "aliases": [
+    "901",
+    "903",
+    "904",
+    "E901",
+    "E903",
+    "E904",
+    "INS 903",
+    "carnauba wax",
+    "shellac",
+    "beeswax",
+    "glazing agent"
+   ],
+   "domain": "food",
+   "rating": "green",
+   "how_its_made": "Natural waxes from palm leaves (carnauba), lac insects (shellac) and bees. Make lollies and fruit shiny.",
+   "side_effects": "No meaningful concerns. Shellac and beeswax are animal-derived.",
+   "avoid_guidance": "Fine.",
+   "evidence": "strong",
+   "sources": [
+    "EFSA"
+   ],
+   "group": "Acids and others"
+  },
+  {
+   "id": "dimethylpolysiloxane",
+   "canonical_name": "Dimethylpolysiloxane",
+   "aliases": [
+    "900",
+    "900a",
+    "E900",
+    "INS 900a",
+    "dimethylpolysiloxane",
+    "dimethicone",
+    "polydimethylsiloxane"
+   ],
+   "domain": "food",
+   "rating": "yellow",
+   "how_its_made": "A silicone made synthetically. Stops frying oil foaming (common in fast-food chips) and is used in some drinks.",
+   "side_effects": "Considered safe and barely absorbed. Mainly a marker of industrial frying.",
+   "avoid_guidance": "Fine occasionally.",
+   "evidence": "limited",
+   "sources": [
+    "EFSA"
+   ],
+   "group": "Acids and others"
+  },
+  {
+   "id": "neotame",
+   "canonical_name": "Neotame and advantame",
+   "aliases": [
+    "961",
+    "969",
+    "E961",
+    "E969",
+    "neotame",
+    "advantame"
+   ],
+   "domain": "food",
+   "rating": "yellow",
+   "how_its_made": "Synthetic sweeteners made from aspartame, thousands of times sweeter than sugar.",
+   "side_effects": "Regulators consider them safe, and they are used in tiny amounts. Less long-term research than older sweeteners; one 2025 lab study raised questions about gut effects of neotame.",
+   "avoid_guidance": "Fine in moderation.",
+   "evidence": "limited",
+   "sources": [
+    "EFSA",
+    "FSANZ"
+   ],
+   "group": "Sweeteners"
+  },
+  {
+   "id": "monk-fruit",
+   "canonical_name": "Monk fruit (luo han guo)",
+   "aliases": [
+    "monk fruit",
+    "monk fruit extract",
+    "luo han guo",
+    "mogrosides"
+   ],
+   "domain": "food",
+   "rating": "green",
+   "how_its_made": "Extracted from monk fruit, a small melon from southern China.",
+   "side_effects": "No meaningful concerns; used for centuries. Often blended with erythritol, so check the rest of the label.",
+   "avoid_guidance": "A good alternative sweetener.",
+   "evidence": "moderate",
+   "sources": [
+    "FSANZ"
+   ],
+   "group": "Sweeteners"
+  },
+  {
+   "id": "added-sugars",
+   "canonical_name": "Added sugars",
+   "aliases": [
+    "=sugar",
+    "cane sugar",
+    "raw sugar",
+    "brown sugar",
+    "icing sugar",
+    "caster sugar",
+    "=glucose",
+    "glucose syrup",
+    "=dextrose",
+    "=sucrose",
+    "=fructose",
+    "golden syrup",
+    "invert sugar",
+    "rice malt syrup",
+    "malt extract",
+    "barley malt extract",
+    "treacle",
+    "molasses",
+    "corn syrup solids",
+    "agave syrup",
+    "coconut sugar",
+    "evaporated cane juice",
+    "fruit juice concentrate"
+   ],
+   "domain": "food",
+   "rating": "yellow",
+   "how_its_made": "Sugars extracted from sugar cane, sugar beet, corn, wheat, rice or fruit.",
+   "side_effects": "Not harmful in small amounts, but diets high in added sugars are linked to weight gain, type 2 diabetes, fatty liver and tooth decay. Labels can list sugar under several names so it appears lower in the list. Honey and maple syrup count as added sugar too, though they are less processed.",
+   "avoid_guidance": "Limit. The WHO suggests keeping added sugars below 10% of daily energy, ideally below 5%. Check how high up the list sugar appears.",
+   "evidence": "strong",
+   "sources": [
+    "WHO 2015"
+   ],
+   "group": "Fats and sugars"
+  },
+  {
+   "id": "honey-maple",
+   "canonical_name": "Honey and maple syrup",
+   "aliases": [
+    "=honey",
+    "maple syrup",
+    "pure maple syrup"
+   ],
+   "domain": "food",
+   "rating": "green",
+   "how_its_made": "Honey is made by bees from nectar; maple syrup is boiled-down sap from maple trees.",
+   "side_effects": "Less processed than refined sugars, but still count as added sugar. Honey must not be given to babies under 12 months because of the risk of infant botulism.",
+   "avoid_guidance": "Fine in moderation. Never give honey to babies under 1.",
+   "evidence": "strong",
+   "sources": [
+    "WHO",
+    "NHMRC"
+   ],
+   "group": "Fats and sugars"
+  },
+  {
+   "id": "interesterified-fat",
+   "canonical_name": "Interesterified fats",
+   "aliases": [
+    "interesterified fat",
+    "interesterified vegetable oil",
+    "interesterified palm oil"
+   ],
+   "domain": "food",
+   "rating": "yellow",
+   "how_its_made": "Oils whose fat structure is chemically rearranged to make them solid, used to replace trans fats in margarine, biscuits and pastry.",
+   "side_effects": "They avoid trans fats, but there is limited research on their long-term effects; a few small studies suggest effects on blood sugar and cholesterol.",
+   "avoid_guidance": "Fine occasionally.",
+   "evidence": "limited",
+   "sources": [
+    "Heart Foundation"
+   ],
+   "group": "Fats and sugars"
+  },
+  {
+   "id": "coconut-oil",
+   "canonical_name": "Coconut oil",
+   "aliases": [
+    "coconut oil",
+    "coconut fat",
+    "virgin coconut oil"
+   ],
+   "domain": "food",
+   "rating": "yellow",
+   "how_its_made": "Pressed from coconut flesh.",
+   "side_effects": "Very high in saturated fat, which raises LDL (\"bad\") cholesterol. It isn’t the superfood it is often marketed as.",
+   "avoid_guidance": "Fine in small amounts. Olive oil is better for everyday use.",
+   "evidence": "strong",
+   "sources": [
+    "Heart Foundation",
+    "AHA"
+   ],
+   "group": "Fats and sugars"
+  },
+  {
+   "id": "olive-oil",
+   "canonical_name": "Olive oil",
+   "aliases": [
+    "olive oil",
+    "extra virgin olive oil",
+    "virgin olive oil"
+   ],
+   "domain": "food",
+   "rating": "green",
+   "how_its_made": "Pressed from olives. Extra virgin is cold-pressed and unrefined.",
+   "side_effects": "One of the best-studied healthy fats: linked to lower heart disease risk in Mediterranean diet research.",
+   "avoid_guidance": "A great choice.",
+   "evidence": "strong",
+   "sources": [
+    "Heart Foundation",
+    "PREDIMED"
+   ],
+   "group": "Fats and sugars"
+  },
+  {
+   "id": "butter-cream",
+   "canonical_name": "Butter and dairy fat",
+   "aliases": [
+    "=butter",
+    "=cream",
+    "milk fat",
+    "butter oil",
+    "anhydrous milk fat",
+    "ghee"
+   ],
+   "domain": "food",
+   "rating": "green",
+   "how_its_made": "Made from cream.",
+   "side_effects": "High in saturated fat, so best in moderation, but a minimally processed, whole ingredient.",
+   "avoid_guidance": "Fine in moderation.",
+   "evidence": "moderate",
+   "sources": [
+    "Heart Foundation"
+   ],
+   "group": "Fats and sugars"
+  },
+  {
+   "id": "artificial-flavour",
+   "canonical_name": "Flavours and artificial flavours",
+   "aliases": [
+    "=flavour",
+    "=flavours",
+    "=flavouring",
+    "natural flavour",
+    "natural flavours",
+    "artificial flavour",
+    "artificial flavours",
+    "=flavor",
+    "natural identical flavour",
+    "vanillin",
+    "ethyl vanillin"
+   ],
+   "domain": "food",
+   "rating": "yellow",
+   "how_its_made": "Mixtures of flavouring compounds, either extracted from natural sources or made synthetically. Companies don’t have to list what’s in them.",
+   "side_effects": "Regulators approve the individual flavouring substances. The main issue is transparency: one word on the label can hide many ingredients, and \"natural\" doesn’t mean it came from the food on the front of the pack.",
+   "avoid_guidance": "Fine occasionally. Fewer flavours on the label usually means less processed.",
+   "evidence": "limited",
+   "sources": [
+    "FSANZ",
+    "EFSA"
+   ],
+   "group": "Flavour enhancers"
+  },
+  {
+   "id": "smoke-flavour",
+   "canonical_name": "Smoke flavouring",
+   "aliases": [
+    "smoke flavour",
+    "liquid smoke",
+    "smoke flavouring",
+    "smoked flavour"
+   ],
+   "domain": "food",
+   "rating": "yellow",
+   "how_its_made": "Made by condensing wood smoke into a liquid.",
+   "side_effects": "In 2023 the EU decided to phase out most smoke flavourings after EFSA could not rule out genotoxicity concerns for any of the eight it reviewed. Still permitted in Australia.",
+   "avoid_guidance": "Fine occasionally. Precautionary yellow.",
+   "evidence": "limited",
+   "sources": [
+    "EFSA 2023"
+   ],
+   "group": "Flavour enhancers"
+  },
+  {
+   "id": "salt",
+   "canonical_name": "Salt",
+   "aliases": [
+    "=salt",
+    "iodised salt",
+    "sea salt",
+    "sodium chloride",
+    "rock salt",
+    "himalayan salt"
+   ],
+   "domain": "food",
+   "rating": "green",
+   "how_its_made": "Mined from salt deposits or evaporated from sea water. Iodised salt has iodine added.",
+   "side_effects": "Essential in small amounts. Most Australians eat about double the recommended amount, which raises blood pressure. Iodised salt helps prevent iodine deficiency.",
+   "avoid_guidance": "Fine as an ingredient; check the sodium figure on the nutrition panel.",
+   "evidence": "strong",
+   "sources": [
+    "NHMRC",
+    "WHO"
+   ],
+   "group": "Acids and others"
+  },
+  {
+   "id": "soy-protein",
+   "canonical_name": "Soy protein isolate",
+   "aliases": [
+    "soy protein isolate",
+    "soy protein",
+    "textured vegetable protein",
+    "TVP",
+    "isolated soy protein"
+   ],
+   "domain": "food",
+   "rating": "green",
+   "how_its_made": "Protein extracted from defatted soybeans, often using hexane, a petroleum solvent removed during processing.",
+   "side_effects": "Generally safe and a good protein source. Soy is a common allergen and must be declared.",
+   "avoid_guidance": "Fine unless you are allergic to soy.",
+   "evidence": "moderate",
+   "sources": [
+    "FSANZ"
+   ],
+   "group": "Acids and others"
+  },
+  {
+   "id": "whey-protein",
+   "canonical_name": "Milk proteins",
+   "aliases": [
+    "whey protein",
+    "whey protein concentrate",
+    "whey protein isolate",
+    "milk protein",
+    "milk protein concentrate",
+    "caseinate",
+    "sodium caseinate",
+    "milk solids",
+    "skim milk powder"
+   ],
+   "domain": "food",
+   "rating": "green",
+   "how_its_made": "Proteins separated from milk.",
+   "side_effects": "No meaningful concerns. Milk is a common allergen and must be declared.",
+   "avoid_guidance": "Fine unless you are allergic to milk.",
+   "evidence": "strong",
+   "sources": [
+    "FSANZ"
+   ],
+   "group": "Acids and others"
+  }
+ ]
+}
