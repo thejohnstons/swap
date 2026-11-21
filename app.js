@@ -130,6 +130,74 @@ function swapsFor(p, max=6){
 }
 
 /* =====================================================================
+   PRICES (beta): from prices.json, updated daily by a GitHub Action
+   using the open-source Hotprices data (Coles and Woolworths only).
+   ===================================================================== */
+let PRICES = null, priceIndex = null, PRICEMAP = {};
+const STOP = new Set(['the','and','with','of','a','in','pack','each','x','for','australian','aus','fresh']);
+const ptoks = s => String(s||'').toLowerCase().replace(/(\d+(?:\.\d+)?)\s*(kg|g|ml|l|pk|pack)\b/g, '$1$2').replace(/[^a-z0-9.]+/g,' ').split(' ').filter(w => w && !STOP.has(w)).map(w => w.length>3 && w.endsWith('s') && !/\d/.test(w) ? w.slice(0,-1) : w);
+async function loadPrices(){
+  if(PRICES) return PRICES;
+  try{ const r = await fetch('prices.json', {cache:'no-cache'}); if(!r.ok) return null; PRICES = await r.json(); }catch(e){ return null; }
+  priceIndex = {};
+  for(const [store, rows] of Object.entries(PRICES.stores || {})){
+    const idx = new Map(); rows.forEach((row, k) => { row._t = ptoks(row.n); new Set(row._t).forEach(t => { if(!idx.has(t)) idx.set(t, []); idx.get(t).push(k); }); });
+    priceIndex[store] = idx;
+  }
+  render(); return PRICES;
+}
+// Best match in one store: most shared words, the brand must appear, sizes must agree when both have one.
+function bestMatches(p, store, max=5){
+  if(!PRICES || !priceIndex[store]) return [];
+  const want = ptoks(`${p.brand||''} ${p.name}`), brand = ptoks(p.brand)[0], size = want.find(t => /^\d/.test(t) && /[a-z]$/.test(t));
+  const counts = new Map();
+  want.forEach(t => (priceIndex[store].get(t) || []).forEach(k => counts.set(k, (counts.get(k)||0) + 1)));
+  const rows = PRICES.stores[store];
+  return [...counts.entries()].filter(([k,c]) => c >= 2).map(([k,c]) => { const r = rows[k];
+      if(brand && !r._t.includes(brand)) return null;
+      const rs = r._t.find(t => /^\d/.test(t) && /[a-z]$/.test(t));
+      let score = c / want.length - 0.03 * Math.max(0, r._t.length - c);   // how much of our name is found, minus a little for extra words
+      if(size && rs) score += size===rs ? 0.25 : -0.4;
+      return {r, score}; }).filter(Boolean).sort((a,b) => b.score - a.score).slice(0, max);
+}
+function priceFor(p, store){
+  const pin = (PRICEMAP[p.barcode]||{})[store];
+  if(pin === 'none') return null;
+  if(pin){ const r = (PRICES && PRICES.stores[store] || []).find(x => x.i === pin); if(r) return {r, pinned:true}; }
+  const m = bestMatches(p, store, 1)[0];
+  return m && m.score >= 0.55 ? m : null;
+}
+const money = n => '$' + (+n).toFixed(2);
+const onSpecial = r => r.was && r.p < r.was * 0.97 || r.u && r.p < r.u * 0.9;
+function priceCard(p){
+  if(!PRICES) return `<p class="note" style="margin-top:12px">💲 Prices (beta) will show here after the first daily update.</p>`;
+  const rows = [['coles','Coles'],['woolies','Woolworths']].map(([k,n]) => [k, n, priceFor(p, k)]);
+  if(!rows.some(x => x[2])) return `<p class="note" style="margin-top:12px">💲 No price match at Coles or Woolworths yet. <button type="button" class="link" data-pricepick="${esc(p.barcode)}">Find it</button></p>`;
+  const found = rows.filter(x=>x[2]), cheapest = found.length > 1 ? found.reduce((a,b) => a[2].r.p <= b[2].r.p ? a : b)[0] : null;
+  return `<h3 class="sec">💲 Prices <span class="note" style="font-weight:600">beta · ${esc(PRICES.updated||'')}</span></h3><div class="list">${rows.map(([k,n,m]) => m ? `<div class="prow" style="cursor:default"><span class="dot ${cheapest===k?'green':'none'}" aria-hidden="true"></span><span class="pt"><b>${n}: ${money(m.r.p)}${onSpecial(m.r) ? ` <span class="badge green" style="font-size:12px;padding:2px 8px">🏷️ special${m.r.was?` (was ${money(m.r.was)})`:''}</span>` : ''}</b><span>${esc(m.r.n)}${m.r.u && Math.abs(m.r.u-m.r.p)>0.01 ? ` · usually ${money(m.r.u)}` : ''}${m.r.lo < m.r.p ? ` · lowest lately ${money(m.r.lo)}` : ''}</span></span>${cheapest===k?'<span class="note" style="font-weight:800;color:var(--green)">cheaper</span>':''}</div>` : `<div class="prow" style="cursor:default"><span class="dot none" aria-hidden="true"></span><span class="pt"><b>${n}: not matched</b></span></div>`).join('')}</div>
+    <p class="note">Matched by name. <button type="button" class="link" data-pricepick="${esc(p.barcode)}">Not the right product?</button> Online prices, which can differ in store.</p>`;
+}
+function pricePickSheet(bc){
+  const p = PRODUCTS.get(bc); if(!p) return;
+  const opts = store => bestMatches(p, store, 5);
+  openSheet(`<h2>Match prices</h2><p class="note">Pick the same product at each store, or search.</p>
+    <label class="sr" for="pq">Search prices</label><input id="pq" class="search" value="${esc(((p.brand||'')+' '+p.name).trim())}">
+    <div id="pres"></div>`, body => {
+    const draw = () => { const q = body.querySelector('#pq').value, fake = {...p, brand:'', name:q};
+      body.querySelector('#pres').innerHTML = [['coles','Coles'],['woolies','Woolworths']].map(([k,n]) => `<h3 class="sec">${n}</h3><div class="list">${(q.trim() ? bestMatches(fake, k, 6) : opts(k)).map(m => `<button type="button" class="prow" data-pin="${k}|${esc(m.r.i)}"><span class="dot none"></span><span class="pt"><b>${esc(m.r.n)}</b><span>${money(m.r.p)}</span></span></button>`).join('') || '<p class="note">No matches.</p>'}<button type="button" class="link" data-pin="${k}|none">Not sold at ${n}</button></div>`).join('');
+      body.querySelectorAll('[data-pin]').forEach(b => b.onclick = async () => { const [k, id] = b.dataset.pin.split('|'); PRICEMAP[bc] = {...(PRICEMAP[bc]||{}), [k]: id};
+        try{ await F.put('swap_meta', {id:'pricemap', map:PRICEMAP}); }catch(e){} toast('Saved ✓'); productSheet(bc); }); };
+    body.querySelector('#pq').oninput = draw; draw();
+  }, 'Match prices');
+}
+function specialsHTML(){
+  if(!PRICES) return '';
+  const fav = [...PRODUCTS.values()].filter(p => HEARTS.has(p.barcode)).map(p => ({p, m:[priceFor(p,'coles'), priceFor(p,'woolies')].filter(Boolean).filter(m => onSpecial(m.r))})).filter(x => x.m.length);
+  if(!fav.length) return '';
+  return `<h2 class="sec">🏷️ On special this week</h2><div class="list">${fav.slice(0,6).map(({p,m}) => `<button type="button" class="prow" data-product="${esc(p.barcode)}"><span class="dot green" aria-hidden="true"></span><span class="pt"><b>${esc(p.name)}</b><span>${m.map(x => `${PRICES.stores.coles.includes(x.r)?'Coles':'Woolies'} ${money(x.r.p)}${x.r.was?` (was ${money(x.r.was)})`:''}`).join(' · ')}</span></span></button>`).join('')}</div>`;
+}
+
+/* =====================================================================
    VIEWS
    ===================================================================== */
 function render(){
@@ -152,6 +220,7 @@ function renderHome(){
       <div class="row"><button type="button" class="btn dark" data-act="scan">📷 Scan</button><button type="button" class="btn light" data-act="photo">📸 Label photo</button></div></div>${flower()}</section>
     ${storePills()}
     ${swapIdeas.length ? `<h2 class="sec">Swaps for you</h2><div class="grid2">${swapIdeas.map((x,i)=>`<button type="button" class="pcard ${colours[i%4]}" data-product="${esc(x.s.barcode)}"><span class="row1"><span class="lvl">Instead of ${esc(x.p.name)}</span></span><b>Try ${esc(x.s.name)}</b><span class="br">${esc(x.s.brand)}</span><span class="st">${rate(x.s).overall_rating==='green'?'🟢 Great choice':'🟡 A better choice'}</span></button>`).join('')}</div>` : ''}
+    ${specialsHTML()}
     ${recent.length ? `<h2 class="sec">Recently checked</h2><div class="grid2">${recent.map((p,i)=>card(p, colours[i%4])).join('')}</div>` : ''}
     ${hearted.length ? `<h2 class="sec">Family favourites ♥</h2><div class="list">${hearted.map(row).join('')}</div>` : ''}
     ${!all.length ? `<div class="empty"><b>Your catalogue is empty</b><p>Go to <b>More</b> and tap <b>Build catalogue</b> to bring in thousands of Australian supermarket products, or start by scanning something from the pantry.</p><button type="button" class="btn dark" data-go="more">Build catalogue</button></div>`
@@ -195,6 +264,8 @@ function renderMore(){
       <div class="prog"><i style="width:${Math.round(b.done.length/total*100)}%"></i></div><p class="note" style="margin:6px 0 10px">${b.done.length} of ${total} categories done · ${PRODUCTS.size.toLocaleString('en-AU')} products</p>
       <div class="row"><button type="button" class="btn dark" id="buildGo">${building ? '⏸ Stop' : b.done.length ? '▶ Carry on' : '▶ Build catalogue'}</button>${b.done.length ? '<button type="button" class="btn light" id="buildRe">Refresh all</button>' : ''}</div>
       <p class="note" id="buildLog" role="status" style="margin-top:10px">${esc(buildMsg)}</p></section>
+    <section class="panel c-lilac"><h2>💲 Prices (beta)</h2><p>${PRICES ? `Coles and Woolworths prices, updated <b>${esc(PRICES.updated)}</b> (${(PRICES.stores.coles||[]).length.toLocaleString('en-AU')} + ${(PRICES.stores.woolies||[]).length.toLocaleString('en-AU')} products).` : 'Prices appear here after the first daily update runs.'}</p>
+      <p class="note">From the free, open-source Hotprices project (hotprices.org), which collects online prices once a day. Unofficial: it may stop working, doesn’t include ALDI, and in-store prices can differ. Specials are flagged when a price is below its usual or previous price.</p></section>
     <section class="panel"><h2>How ratings work</h2><p>${dot('red')} <b>Red</b>: good reason to avoid or limit. ${dot('yellow')} <b>Yellow</b>: fine sometimes, or the evidence is mixed. ${dot('green')} <b>Green</b>: nothing of concern found.</p>
       <p>A product takes the rating of its most concerning ingredient. Ingredients we haven’t researched don’t count for or against it, so a green product means none of its known ingredients are a concern.</p>
       <p class="note">Product information comes from Open Food Facts, which is built by volunteers. Recipes change, so check the pack if something matters to you. General information, not medical advice.</p></section>
@@ -216,6 +287,7 @@ function productSheet(bc){
   openSheet(`<div class="ptop ${r||'none'}">${p.img ? `<img src="${esc(p.img)}" alt="" class="pimg" loading="lazy" referrerpolicy="no-referrer">` : `<span class="pimg ph" aria-hidden="true">${CAT_ICON[p.cat]||'🛒'}</span>`}
       <div><p class="kick">${esc(p.brand||'')}</p><h2 id="pName">${esc(p.name)}</h2>${badge(r)}</div></div>
     <div class="row" style="margin:12px 0"><button type="button" class="btn ${HEARTS.has(bc)?'dark':'light'}" id="heart" aria-pressed="${HEARTS.has(bc)}">${HEARTS.has(bc)?'♥ Favourite':'♡ Add to favourites'}</button><span class="note">${p.retailers.length ? esc(p.retailers.join(' · ')) : 'Store not listed'}</span></div>
+    ${priceCard(p)}
     ${!p.text ? `<div class="panel c-pink"><b>No ingredient list yet</b><p>Snap a photo of the ingredients and it’ll be rated straight away.</p><button type="button" class="btn dark" data-act="photo" data-bc="${esc(bc)}">📸 Snap ingredients</button></div>` : ''}
     ${swaps.length ? `<h3 class="sec">🔁 Swap it for</h3><div class="hscroll">${swaps.map((s,i)=>card(s, ['c-orange','c-peri','c-pink','c-lilac'][i%4])).join('')}</div>` : (['red','yellow'].includes(r) ? `<p class="note">No better swaps in this category yet. <a href="${online}" target="_blank" rel="noopener">Search for cleaner options online ↗</a></p>` : '')}
     ${flagged.length ? `<h3 class="sec">What we found</h3><div class="list">${flagged.map(x=>`<button type="button" class="prow" data-ing="${esc(x.ingredient_id)}">${dot(x.rating)}<span class="pt"><b>${esc(x.canonical_name)}</b><span>on the label as “${esc(x.text)}”</span></span><span class="chev" aria-hidden="true">›</span></button>`).join('')}</div>` : (p.text ? '<p class="note">None of its ingredients are on our watch list. 🎉</p>' : '')}
@@ -244,23 +316,67 @@ function ingredientSheet(id){
    SCANNER, LABEL PHOTO, SEARCH
    ===================================================================== */
 function loadScript(src){ return new Promise((ok, no) => { if(document.querySelector(`script[src="${src}"]`)) return ok(); const s = document.createElement('script'); s.src = src; s.onload = ok; s.onerror = no; document.head.appendChild(s); }); }
-let qr = null;
-async function stopScanner(){ if(qr){ try{ await qr.stop(); }catch(e){} try{ qr.clear(); }catch(e){} qr = null; } }
+/* ---------- Live barcode scanner ----------
+   Uses the phone's own barcode reader where there is one (Android Chrome), otherwise
+   zxing-cpp compiled to WebAssembly (scanner.js + zxing_reader.wasm), which reads
+   supermarket barcodes quickly in iPhone Safari. */
+const FORMATS = ['ean_13','ean_8','upc_a','upc_e'];
+let detector = null, cam = null;
+async function getDetector(){
+  if(detector) return detector;
+  if('BarcodeDetector' in window){ try{ const f = await window.BarcodeDetector.getSupportedFormats(); if(f.includes('ean_13')) return detector = new window.BarcodeDetector({formats:FORMATS}); }catch(e){} }
+  const m = await import('./scanner.js'); return detector = new m.BarcodeDetector({formats:FORMATS});
+}
+function stopScanner(){ if(cam){ cam.stopped = true; clearTimeout(cam.timer); (cam.stream ? cam.stream.getTracks() : []).forEach(t=>t.stop()); cam = null; } }
 async function scanSheet(){
-  openSheet(`<h2>Scan a barcode</h2><p class="note">Point your camera at the barcode.</p><div id="reader" class="reader"></div>
-    <label class="lbl" for="bcIn">Or type the barcode</label><div class="row"><input id="bcIn" class="search" inputmode="numeric" placeholder="e.g. 9300633600113" style="flex:1"><button type="button" class="btn dark" id="bcGo">Look up</button></div>
-    <p class="note" id="scanMsg" role="status"></p>`, async body => {
+  openSheet(`<h2>Scan a barcode</h2><p class="note" id="scanMsg" role="status">Starting the camera…</p>
+    <div class="reader"><video id="vid" playsinline muted autoplay></video><div class="aim" aria-hidden="true"><i></i></div><button type="button" class="torch" id="torch" hidden aria-pressed="false">🔦</button></div>
+    <p class="note">Hold the barcode inside the box, about 15–20 cm away. It scans automatically.</p>
+    <label class="lbl" for="bcIn">Or type the numbers under the barcode</label><div class="row"><input id="bcIn" class="search" inputmode="numeric" placeholder="e.g. 9300633600113" style="flex:1"><button type="button" class="btn dark" id="bcGo">Look up</button></div>`, async body => {
+    const msg = t => { const m = body.querySelector('#scanMsg'); if(m) m.textContent = t; };
     body.querySelector('#bcGo').onclick = () => handleBarcode(body.querySelector('#bcIn').value);
+    const video = body.querySelector('#vid');
     try{
-      await loadScript('https://cdn.jsdelivr.net/npm/html5-qrcode@2.3.8/html5-qrcode.min.js');
-      const H = window.Html5Qrcode, Fm = window.Html5QrcodeSupportedFormats;
-      qr = new H('reader', {formatsToSupport:[Fm.EAN_13, Fm.EAN_8, Fm.UPC_A, Fm.UPC_E], verbose:false});
-      await qr.start({facingMode:'environment'}, {fps:10, qrbox:{width:260, height:140}}, txt => { stopScanner(); handleBarcode(txt); }, () => {});
-    }catch(e){ const m = body.querySelector('#scanMsg'); if(m) m.textContent = 'The camera isn’t available. Check camera permission for this site, or type the barcode instead.'; }
+      const [det, stream] = await Promise.all([getDetector(), navigator.mediaDevices.getUserMedia({audio:false, video:{facingMode:{ideal:'environment'}, width:{ideal:1920}, height:{ideal:1080}}})]);
+      if($('#sheet').hidden || !body.isConnected){ stream.getTracks().forEach(t=>t.stop()); return; }
+      cam = {stream, stopped:false, timer:null};
+      const track = stream.getVideoTracks()[0], caps = track.getCapabilities ? track.getCapabilities() : {};
+      try{ if((caps.focusMode||[]).includes('continuous')) await track.applyConstraints({advanced:[{focusMode:'continuous'}]}); }catch(e){}
+      if(caps.torch){ const tb = body.querySelector('#torch'); tb.hidden = false; tb.onclick = async () => { const on = tb.getAttribute('aria-pressed')!=='true'; try{ await track.applyConstraints({advanced:[{torch:on}]}); tb.setAttribute('aria-pressed', String(on)); }catch(e){} }; }
+      video.srcObject = stream; await video.play().catch(()=>{});
+      msg('Point the camera at the barcode.');
+      const canvas = document.createElement('canvas'), ctx = canvas.getContext('2d', {willReadFrequently:true});
+      let last = '', hits = 0;
+      const tick = async () => {
+        if(!cam || cam.stopped) return;
+        const vw = video.videoWidth, vh = video.videoHeight;
+        if(vw && vh){
+          // Only read the middle band, where the box is: faster and more accurate.
+          const cw = Math.floor(vw*0.9), ch = Math.floor(vh*0.5);
+          canvas.width = cw; canvas.height = ch; ctx.drawImage(video, (vw-cw)/2, (vh-ch)/2, cw, ch, 0, 0, cw, ch);
+          try{
+            const found = await det.detect(canvas);
+            const code = found && found[0] && String(found[0].rawValue||'').replace(/\D/g,'');
+            if(code && code.length >= 8){
+              hits = code===last ? hits+1 : 1; last = code;
+              if(hits >= 2 || det.constructor.name==='BarcodeDetector'){ if(navigator.vibrate) navigator.vibrate(60); stopScanner(); handleBarcode(code); return; }
+            }
+          }catch(e){}
+        }
+        if(cam && !cam.stopped) cam.timer = setTimeout(tick, 90);
+      };
+      tick();
+    }catch(e){
+      const why = String(e && (e.name || e.message || e)).toLowerCase();
+      msg(why.includes('notallowed') || why.includes('permission') ? 'Camera permission is off. In iPhone Settings → Safari → Camera, choose Allow or Ask, then tap Scan again.'
+        : why.includes('notfound') || why.includes('overconstrained') ? 'No camera found. Type the numbers under the barcode instead.'
+        : 'The camera didn’t start. Close this and tap Scan again, or type the numbers.');
+      const r = body.querySelector('.reader'); if(r) r.style.display = 'none';
+    }
   }, 'Scan a barcode');
 }
 async function handleBarcode(code){
-  const msg = $('#scanMsg'); if(msg) msg.textContent = 'Looking it up…';
+  const msg = $('#scanMsg'); if(msg) msg.textContent = 'Found '+String(code).replace(/\D/g,'')+'. Looking it up…';
   const res = await lookup(code);
   if(res.status==='bad'){ if(msg) msg.textContent = 'That doesn’t look like a barcode.'; return; }
   if(res.status==='missing'){ closeSheet(); photoSheet(String(code).replace(/\D/g,''), true); return; }
@@ -359,6 +475,7 @@ document.addEventListener('click', e => {
   if(d.act==='scan'){ scanSheet(); return; }
   if(d.act==='photo'){ const bc = d.bc || null; if(!$('#sheet').hidden) closeSheet(); photoSheet(bc, false); return; }
   if(d.act==='search'){ searchSheet(); return; }
+  if(d.pricepick){ pricePickSheet(d.pricepick); return; }
 });
 
 async function start(){
@@ -370,7 +487,8 @@ async function start(){
     if(!u){ $('#gate').hidden = false; $('#tabs').hidden = true; VIEWS.forEach(v => $('#v-'+v).hidden = true); return; }
     $('#gate').hidden = true; $('#tabs').hidden = false;
     F.listen('swap_catalogue', mergeChunks, () => toast('Couldn’t load the catalogue. Check you’re signed in.'));
-    F.listen('swap_meta', rows => { const h = rows.find(r=>r.id==='hearts'); HEARTS = new Set(h ? h.list : []); render(); }, () => {});
+    F.listen('swap_meta', rows => { const h = rows.find(r=>r.id==='hearts'); HEARTS = new Set(h ? h.list : []); const pm = rows.find(r=>r.id==='pricemap'); PRICEMAP = pm ? (pm.map||{}) : {}; render(); }, () => {});
+    loadPrices();
     go(location.hash.slice(1) || 'home');
   });
 }
